@@ -1,0 +1,145 @@
+/** @format */
+
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap");
+
+*,
+*::after,
+*::before {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-weight: 300;
+  line-height: 1.6;
+  font-family: "Roboto", sans-serif;
+
+  background-color: #121212;
+  color: #f5f5f5;
+}
+
+@media only screen and (max-width: 55em) {
+  html {
+    font-size: 43.75%;
+  }
+}
+
+@media only screen and (max-width: 37.5em) {
+  html {
+    font-size: 37.5%;
+  }
+}
+
+@media only screen and (max-width: 32em) {
+  html {
+    font-size: 30%;
+  }
+}
+@media only screen and (max-width: 25em) {
+  html {
+    font-size: 25%;
+  }
+}
+
+.container {
+  /* border: 2px solid #f5f5f5; */
+  width: 80rem;
+  height: 100vh;
+
+  margin: auto;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.review-heading {
+  font-size: 5rem;
+  text-transform: uppercase;
+  color: teal;
+
+  margin-bottom: 5rem;
+}
+
+.review-box {
+  /* border: 2px solid blue; */
+  background-color: #222;
+  box-shadow: 0 0 2rem 1rem #323232;
+  border-radius: 2rem;
+
+  width: 55rem;
+  height: auto;
+  padding: 1rem;
+
+  margin: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.review-img {
+  border: 2px solid teal;
+  padding: 0.5rem;
+  width: 20rem;
+  height: 20rem;
+  margin: 2rem;
+  border-radius: 50%;
+}
+
+#img {
+  width: 100%;
+  display: block;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  position: relative;
+}
+
+#author {
+  font-size: 3rem;
+  font-weight: 500;
+}
+
+#job {
+  font-size: 1.75rem;
+  font-weight: 500;
+  color: teal;
+  line-height: 1;
+}
+
+#para {
+  font-size: 2rem;
+  text-align: center;
+  margin: 1.5rem 3rem;
+}
+
+.btn-container {
+  margin: 1rem 2rem;
+}
+
+.prev-btn,
+.next-btn {
+  background-color: transparent;
+  border: none;
+  font-size: 2rem;
+  padding: 1rem;
+  margin: 0 1.5rem;
+  cursor: pointer;
+  color: #cfcbcb;
+}
+
+.prev-btn:hover {
+  color: teal;
+}
+.next-btn:hover {
+  color: teal;
+}
